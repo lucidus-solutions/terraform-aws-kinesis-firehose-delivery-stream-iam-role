@@ -14,6 +14,12 @@ variable "env" {
   sensitive = false
 }
 
+variable "force_detach_policies" {
+  type      = bool
+  default   = false
+  sensitive = false
+}
+
 variable "program" {
   type        = string
   description = "The name of the program that the application or project belongs to"
